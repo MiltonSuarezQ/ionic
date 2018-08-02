@@ -26,6 +26,14 @@
     <ion-input type="password"[(ngModel)]="password"></ion-input>
 </ion-item>
 <div class="form-item">
-  <button ion-button (click)="createAccount()">Crear cuienta</button>
+  <button ion-button (click)="createAccount()">Crear cuenta</button>
+  <button ion-button (click)="createAccountWithGoogle()">
+    <ion-icon name="logo-google" style="margin-right: 1em"></ion-icon> 
+    Crear cuenta
+  </button>
+  <button ion-button (click)="createAccountWithFacebook()">
+      <ion-icon name="logo-facebook" style="margin-right: 1em"></ion-icon> 
+      Crear cuenta
+    </button>
 </div>
 </ion-content>

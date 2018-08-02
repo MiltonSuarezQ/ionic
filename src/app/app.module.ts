@@ -12,6 +12,7 @@ import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {AngularFireAuthModule} from 'angularfire2/auth';
 
 import {firebaseConfig} from '../enviroments/firebase-config';
+import {Authentication} from '../servicios/authentication';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -40,6 +41,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    Authentication,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
